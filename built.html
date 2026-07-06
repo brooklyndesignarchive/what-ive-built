@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gerardo</title>
+<title>Some things I've built</title>
 <style>
   :root {
     --bg: #fdfdfc;
@@ -41,24 +41,34 @@
     margin: 0 0 48px;
   }
 
-  .bio {
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project {
+    padding: 20px 0;
+  }
+
+  .project-title {
+    display: inline-block;
     font-size: 17px;
-    color: var(--text);
-    max-width: 520px;
-  }
-
-  .bio p {
-    margin: 0 0 20px;
-  }
-
-  .bio a {
-    color: var(--accent);
+    font-weight: 600;
     text-decoration: none;
+    color: var(--accent);
+    margin-bottom: 4px;
   }
 
-  .bio a:hover {
+  .project-title:hover {
     text-decoration: underline;
     text-underline-offset: 3px;
+  }
+
+  .project-desc {
+    display: block;
+    font-size: 15px;
+    color: var(--text-muted);
+    max-width: 480px;
   }
 
   footer {
@@ -106,17 +116,28 @@
   @media (max-width: 480px) {
     .wrap { padding: 64px 20px 48px; }
     h1 { font-size: 24px; }
-    .bio { font-size: 16px; }
   }
 </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>Gerardo</h1>
+    <h1>Some things I've built</h1>
 
-    <div class="bio">
-      <p>I'm a designer and builder based in Brooklyn. I make small tools, archives, and experiments — usually somewhere between design and code.</p>
-      <p>This is a home for the things I make. Have a look at what I've built, or find me elsewhere.</p>
+    <div class="projects">
+      <div class="project">
+        <a class="project-title" href="https://brooklyndesignarchive.github.io/inkboiler300/" target="_blank" rel="noopener">Ink Boiler 300</a>
+        <span class="project-desc">A browser-based tool for generating ink boil animations.</span>
+      </div>
+
+      <div class="project">
+        <a class="project-title" href="https://brooklyndesignarchive.github.io/chair-archive/" target="_blank" rel="noopener">Chair Archive</a>
+        <span class="project-desc">An archive site cataloging a collection of chairs.</span>
+      </div>
+
+      <div class="project">
+        <a class="project-title" href="https://brooklyndesignarchive.github.io/wigglythingy/ink-boil.html" target="_blank" rel="noopener">Wiggly Thingy</a>
+        <span class="project-desc">An interactive ink boil animation experiment.</span>
+      </div>
     </div>
 
     <footer>
@@ -124,8 +145,8 @@
     </footer>
 
     <nav class="switch">
-      <a href="index.html" class="active">Bio</a>
-      <a href="built.html">Built</a>
+      <a href="index.html">Bio</a>
+      <a href="built.html" class="active">Built</a>
     </nav>
   </div>
 </body>
