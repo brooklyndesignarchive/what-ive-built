@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Some things I've built</title>
+<style>
+  :root {
+    --bg: #fdfdfc;
+    --text: #1a1a1a;
+    --text-muted: #6b6b6b;
+    --accent: #ff6a0f;
+    --rule: #e8e6e2;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 96px 24px 64px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 0 0 48px;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project {
+    padding: 20px 0;
+  }
+
+  .project-title {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  .project-title:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .project-desc {
+    display: block;
+    font-size: 15px;
+    color: var(--text-muted);
+    max-width: 480px;
+  }
+
+  footer {
+    margin-top: 64px;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+
+  footer a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  footer a:hover {
+    border-bottom-color: var(--text);
+  }
+
+  @media (max-width: 480px) {
+    .wrap { padding: 64px 20px 48px; }
+    h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Some things I've built</h1>
+
+    <div class="projects">
+      <div class="project">
+        <a class="project-title" href="https://brooklyndesignarchive.github.io/inkboiler300/" target="_blank" rel="noopener">Ink Boiler 300</a>
+        <span class="project-desc">A browser-based tool for generating ink boil animations.</span>
+      </div>
+
+      <div class="project">
+        <a class="project-title" href="https://brooklyndesignarchive.github.io/chair-archive/" target="_blank" rel="noopener">Chair Archive</a>
+        <span class="project-desc">An archive site cataloging a collection of chairs.</span>
+      </div>
+
+      <div class="project">
+        <a class="project-title" href="https://brooklyndesignarchive.github.io/wigglythingy/ink-boil.html" target="_blank" rel="noopener">Wiggly Thingy</a>
+        <span class="project-desc">An interactive ink boil animation experiment.</span>
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://instagram.com/thegerardoguide" target="_blank" rel="noopener">@thegerardoguide</a>
+    </footer>
+  </div>
+</body>
+</html>
