@@ -38,13 +38,19 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    flex-wrap: wrap;
-    gap: 16px 24px;
+    flex-wrap: nowrap;
+    gap: 24px;
     margin-bottom: 32px;
   }
 
   .topbar h1 {
     margin: 0;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .topbar .switch {
+    flex: 0 0 auto;
   }
 
   .switch {
@@ -136,6 +142,8 @@
   @media (max-width: 480px) {
     .wrap { padding: 40px 20px 48px; }
     h1 { font-size: 24px; }
+    .topbar { gap: 12px; }
+    .switch a { padding: 5px 11px; font-size: 13px; }
   }
 </style>
 </head>
