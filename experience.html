@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Some things I've built</title>
+<title>Experience</title>
 <style>
   :root {
     --bg: #fdfdfc;
@@ -77,37 +77,44 @@
     font-size: 28px;
     font-weight: 600;
     letter-spacing: -0.02em;
-    margin: 0 0 48px;
+    margin: 0 0 40px;
   }
 
-  .projects {
-    display: flex;
-    flex-direction: column;
+  .exp {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 520px;
   }
 
-  .project {
-    padding: 20px 0;
+  .exp li {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--rule);
   }
 
-  .project-title {
-    display: inline-block;
+  .exp li:last-child {
+    border-bottom: none;
+  }
+
+  .exp-role {
     font-size: 17px;
     font-weight: 600;
-    text-decoration: none;
+  }
+
+  .exp-org {
     color: var(--accent);
-    margin-bottom: 4px;
   }
 
-  .project-title:hover {
-    text-decoration: underline;
-    text-underline-offset: 3px;
+  .exp-meta {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 2px;
   }
 
-  .project-desc {
-    display: block;
+  .exp-desc {
     font-size: 15px;
     color: var(--text-muted);
-    max-width: 480px;
+    margin-top: 6px;
   }
 
   footer {
@@ -135,30 +142,39 @@
 <body>
   <div class="wrap">
     <header class="topbar">
-      <h1>Some things I've built</h1>
+      <h1>Experience</h1>
       <nav class="switch">
         <a href="index.html">Bio</a>
-        <a href="built.html" class="active">Built</a>
-        <a href="experience.html">Experience</a>
+        <a href="built.html">Built</a>
+        <a href="experience.html" class="active">Experience</a>
       </nav>
     </header>
 
-    <div class="projects">
-      <div class="project">
-        <a class="project-title" href="https://brooklyndesignarchive.github.io/inkboiler300/" target="_blank" rel="noopener">Ink Boiler 300</a>
-        <span class="project-desc">A browser-based tool for generating ink boil animations.</span>
-      </div>
+    <ul class="exp">
+      <li>
+        <div class="exp-role">Lead, Experiential Marketing Design · <span class="exp-org">Amplify</span></div>
+        <div class="exp-meta">Present</div>
+        <div class="exp-desc">Leading the design of experiential marketing across events, campaigns, and brand moments.</div>
+      </li>
 
-      <div class="project">
-        <a class="project-title" href="https://brooklyndesignarchive.github.io/chair-archive/" target="_blank" rel="noopener">Chair Archive</a>
-        <span class="project-desc">An archive site cataloging a collection of chairs.</span>
-      </div>
+      <li>
+        <div class="exp-role">Designer · <span class="exp-org">Center for Health + Technology</span></div>
+        <div class="exp-meta">University of Rochester</div>
+        <div class="exp-desc">Design work at the intersection of health, research, and technology.</div>
+      </li>
 
-      <div class="project">
-        <a class="project-title" href="https://brooklyndesignarchive.github.io/wigglythingy/ink-boil.html" target="_blank" rel="noopener">Wiggly Thingy</a>
-        <span class="project-desc">An interactive ink boil animation experiment.</span>
-      </div>
-    </div>
+      <li>
+        <div class="exp-role">Harvard Innovation Labs</div>
+        <div class="exp-meta">Cambridge, MA</div>
+        <div class="exp-desc">Building and prototyping early-stage ventures and ideas.</div>
+      </li>
+
+      <li>
+        <div class="exp-role">Founder · <span class="exp-org">Brooklyn Design Archive</span></div>
+        <div class="exp-meta">Ongoing</div>
+        <div class="exp-desc">An archive and home for design tools, experiments, and collections.</div>
+      </li>
+    </ul>
 
     <footer>
       <a href="https://instagram.com/thegerardoguide" target="_blank" rel="noopener">@thegerardoguide</a>

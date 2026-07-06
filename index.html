@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gerardo</title>
+<title>Hi, I'm Gerardo.</title>
 <style>
   :root {
     --bg: #fdfdfc;
@@ -31,14 +31,53 @@
   .wrap {
     max-width: 640px;
     margin: 0 auto;
-    padding: 96px 24px 64px;
+    padding: 64px 24px 64px;
+  }
+
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    margin-bottom: 32px;
+  }
+
+  .topbar h1 {
+    margin: 0;
+  }
+
+  .switch {
+    display: inline-flex;
+    margin-bottom: 0;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 3px;
+    gap: 2px;
+  }
+
+  .switch a {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-muted);
+    padding: 6px 16px;
+    border-radius: 999px;
+    transition: color .15s ease, background .15s ease;
+  }
+
+  .switch a:hover { color: var(--text); }
+
+  .switch a.active {
+    color: #fff;
+    background: var(--accent);
   }
 
   h1 {
     font-size: 28px;
     font-weight: 600;
     letter-spacing: -0.02em;
-    margin: 0 0 48px;
+    margin: 0 0 32px;
   }
 
   .bio {
@@ -77,34 +116,8 @@
     border-bottom-color: var(--text);
   }
 
-  .switch {
-    display: inline-flex;
-    margin-top: 56px;
-    border: 1px solid var(--rule);
-    border-radius: 999px;
-    padding: 3px;
-    gap: 2px;
-  }
-
-  .switch a {
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--text-muted);
-    padding: 6px 16px;
-    border-radius: 999px;
-    transition: color .15s ease, background .15s ease;
-  }
-
-  .switch a:hover { color: var(--text); }
-
-  .switch a.active {
-    color: #fff;
-    background: var(--accent);
-  }
-
   @media (max-width: 480px) {
-    .wrap { padding: 64px 20px 48px; }
+    .wrap { padding: 40px 20px 48px; }
     h1 { font-size: 24px; }
     .bio { font-size: 16px; }
   }
@@ -112,21 +125,24 @@
 </head>
 <body>
   <div class="wrap">
-    <h1>Gerardo</h1>
+    <header class="topbar">
+      <h1>Hi, I'm Gerardo.</h1>
+      <nav class="switch">
+        <a href="index.html" class="active">Bio</a>
+        <a href="built.html">Built</a>
+        <a href="experience.html">Experience</a>
+      </nav>
+    </header>
 
     <div class="bio">
       <p>I'm a designer and builder based in Brooklyn. I make small tools, archives, and experiments — usually somewhere between design and code.</p>
-      <p>This is a home for the things I make. Have a look at what I've built, or find me elsewhere.</p>
+      <p>I currently lead the design of experiential marketing at <a href="https://amplify.com" target="_blank" rel="noopener">Amplify.com</a>.</p>
+      <p>This is a home for the things I make.</p>
     </div>
 
     <footer>
       <a href="https://instagram.com/thegerardoguide" target="_blank" rel="noopener">@thegerardoguide</a>
     </footer>
-
-    <nav class="switch">
-      <a href="index.html" class="active">Bio</a>
-      <a href="built.html">Built</a>
-    </nav>
   </div>
 </body>
 </html>
