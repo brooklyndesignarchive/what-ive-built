@@ -74,6 +74,16 @@
 
   .switch a:hover { color: var(--text); }
 
+  .switch .disabled {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-muted);
+    padding: 6px 16px;
+    border-radius: 999px;
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
   .switch a.active {
     color: #fff;
     background: var(--accent);
@@ -147,7 +157,7 @@
       <nav class="switch">
         <a href="index.html">Bio</a>
         <a href="built.html" class="active">Built</a>
-        <a href="experience.html">Experience</a>
+        <span class="disabled" aria-disabled="true">Experience</span>
       </nav>
     </header>
 
