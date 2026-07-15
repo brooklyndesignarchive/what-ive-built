@@ -319,6 +319,22 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
+  /* ----------  BACK LINK  ---------- */
+  .back {
+    position: absolute;
+    left: clamp(18px, 4vw, 46px);
+    top: clamp(16px, 4vh, 40px);
+    z-index: 6;
+    font-family: 'Optician Sans', system-ui, sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(70,54,62,0.55);
+    transition: color 0.2s ease;
+  }
+  .back:hover, .back:focus-visible { color: rgba(70,54,62,0.9); }
+
   /* ----------  COLOR PICKERS  ---------- */
   .picker {
     position: absolute;
@@ -433,6 +449,8 @@
       </div>
     </div>
   </div>
+
+  <a class="back" href="index.html">&larr; Bio</a>
 
   <div class="picker">
     <div class="picker-group">
